@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--Centro de Biotecnologia agropecuaria 
+Analisis y desarrollo del software 
+Ficha:2470980
+Autor:Daniel Felipe Sanchez Guevara 
+Fecha de creacion:16 de febrero 2022 
+Fecha de actualizacion:22 de febrero 2022-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Rellena tu CV</title>
+    <link rel="icon" href="imagen/13.jpg">
+    <link rel="stylesheet" href="css/ejercicio13.css">
+</head>
+<body class="clase">
+    <div id="container">
+        <h3 class="clase">Rellena tu CV</h3>
+            <form action="/php/insertar_cv.php" method="post" enctype="multipart/form-data">
+                Nombre <br/>
+                <input type="text" name="nombre" value="" size="20" maxlength="30" />
+                <br/>
+                Apellidos <br/>
+                <input type="text" name="apellidos" value="" size="50" maxlength="80" />
+                <br/>
+                Contraseña <br/>
+                <input type="password" name="contrasena" value="" maxlength="9" />
+                <br/>
+                DNI <br/>
+                <input type="text" name="dni" value="" size="10" maxlength="9" />
+                <br/>
+                Sexo <br/>
+                <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre <br/>
+                <input type="radio" name="sexo" value="mujer" /> Mujer
+                <br/><br/>
+                Incluir mi foto <input type="file" name="foto" />
+                <br/><br/>
+                <input name="suscribir" type="checkbox" value="suscrbir" checked="checked" />Suscribirme al boletín de novedades
+                <br/><br/>
+                <input type="submit" name="enviar" value="Guardar cambios" />
+                <input type="reset" name="Limpiar" value="Borrar los datos introducidos" />
+            </form>
+            </div>
+
+
+            
+<!--
+        head:La etiqueta de cierre puede ser omitida si lo primero después del elemento head no es un espacio o un comentario. 
+        title: es un tag de código HTML que le permite darle un título a una página web.
+        link: especifica la relación entre el documento actual y un recurso externo. Los usos posibles de este elemento incluyen la definición de un marco relacional para navegación. 
+        body:Solo puede haber un elemento en un documento. 
+        h3:se usan para títulos de subsecciones, es decir subtítulos de un H2.
+        from: es una etiqueta de HTML que representa un formulario
+        input:se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario.
+        br:salto de  linea 
+
+
+-->
+    </body>
+    </html>

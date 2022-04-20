@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--Centro de Biotecnologia agropecuaria 
+Analisis y desarrollo del software 
+Ficha:2470980
+Autor:Daniel Felipe Sanchez Guevara 
+Fecha de creacion:16 de febrero 2022 
+Fecha de actualizacion:22 de febrero 2022-->
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" Content="text/html;charset=UTF-8"/>
+        <title>informacion sobre el producto</title>
+        <link rel="icon" href="imagen/15.jpg">
+        <link rel="stylesheet" href="css/ejercicio15.css">
+    </head>
+    <body>
+        <div id="container">
+        <h3 class="clase">Informacion sobre el producto</h3>
+        <form action="/php/insertar__subasta.php" method="post" enctype="multipart/form-data">
+    <fieldset class="clase">
+        <legend>Datos basicos</legend>
+        <label for="nombre">nombre</label><br>
+        <input type="text" name="nombre" id="nombre" size="50" maxlength="250"/>
+        <br><br>
+        <label for="descripcion">descripcion</label><br>
+        <textarea name="descripcion"  id="descripcion" cols="40" rows="5"></textarea>
+        <br><br>
+        foto<input type="file" name="foto">
+        <br><br>
+        <input name="contador" type="checkbox" value="si"/>Añadir contador de vistas
+    </fieldset>
+
+    <fieldset class="clase">
+        <legend>Datos Económicos</legend>
+        <label id="Precio">Precio</label>
+        <input type="text" size="5" id="precio" name="precio"/>&euro;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select id="impuestos" name="impuestos">
+        <option value="4">4%</option>
+        <option value="7">7%</option>
+        <option value="16">16%</option>
+        <option value="25">25%</option>
+    </select>
+        
+        <br><br>
+        <label > promocion</label> <br>
+        <input type="radio" name="promocion" value="ninguno" checked="checked">ninguno <br>
+        <input type="radio" name="promocion" value="portes">transporte gratuito <br>
+        <input type="radio" name="promocion" value="descuento">descuento 5%
+
+    </fieldset>
+    </form>
+
+    <!--
+    meta:Se incorporan en el encabezado de una página web y que resultan invisibles 
+    title:Este título se puede encontrar en la barra de título del navegador
+    link:Los usos posibles de este elemento incluyen la definición de un marco relacional para navegación.
+    head:Todo lo que tiene que ir en la parte superior (encabezado, titulos iconos, etc) se encuentra aqui.
+    body: Representa el contenido de un documento. 
+    h3: se usan para títulos de subsecciones, es decir subtítulos de un H2. 
+    from: Representa un formulario. En este formulario se agregan los diferentes campos de entrada de datos o de confirmación
+    fieldset: Se utiliza con su respectiva etiqueta de cierre y lo que hace es crear un recuadro que rodea a los elementos de formulario colocados dentro de ella. 
+    legend:El elemento fieldset permite organizar en grupos los campos de un formulario. 
+    label: Representa una etiqueta para un elemento en una interfaz de usuario.
+    input:se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario.
+    br:produce un salto de línea en el texto
+    option: Insertar opciones en una lista de opciones. este tipo de control puede ser usado en formularios para recolectar preferencias de los visitantes.
+    selec:representa un control que muestra un menú de opciones.
+
+    -->
+        </div>
+    </body>
+</html>
