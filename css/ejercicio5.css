@@ -1,0 +1,27 @@
+/*
+Centro de Biotecnologia agropecuaria 
+Analisis y desarrollo del software 
+Ficha:2470980
+Autor:Daniel Felipe Sanchez Guevara 
+Fecha de creacion:23 de febrero 2022 
+*/
+
+/*es el contenedor para todos los aspectos representables de un documento.*/
+body {
+    
+    background-color: rgb(46, 46, 89);
+}
+
+/*es una definición de un estilo que en principio no está asociado a alguna etiqueta HTML*/
+.clase{
+color: rgb(203, 213, 178);
+}
+
+/*De esta forma las filas se alinean bien y muestran el padding correcto. */
+#container{
+width: 1000px;
+height: 500px;
+background-color: rgb(49, 49, 13);
+margin-left: auto;
+margin-right: auto;
+}
